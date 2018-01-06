@@ -70,7 +70,7 @@ bool Cheat::nativeEventFilter(const QByteArray & eventType, void * message, long
 	else if (parameter == hk3) {
 		double t = sqrt((end.x - start.x)*(end.x - start.x) + (end.y - start.y)*(end.y - start.y));
 
-		t *= 3;
+		t *= 2.8;
 
 		int s = (int)t;
 
