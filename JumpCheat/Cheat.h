@@ -3,6 +3,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QAbstractNativeEventFilter>
 #include <QLabel>
+#include <QSpinBox>
 
 #include <windows.h>
 
@@ -18,11 +19,17 @@ protected:
 	int hk1;
 	int hk2;
 	int hk3;
+	int hk4;
 	HWND id;
 	POINT start;
 	POINT end;
 
 	QLabel *labPoint1;
 	QLabel *labPoint2;
+	QLabel *labKValue;
 	QLabel *labInfor;
+
+	QSpinBox *spinKValue;
+
+	bool isFirst;
 };
